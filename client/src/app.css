@@ -1,0 +1,14 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .bodyBackground {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Minimum height to cover the full viewport */
+    width: 100vw;
+    margin: 0; /* Remove default margin */
+  }

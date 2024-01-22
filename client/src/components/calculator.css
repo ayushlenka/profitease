@@ -1,0 +1,162 @@
+/* calculator.css */
+.body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.calc-taskbar-container {
+    height: 60px; /* Adjust based on actual height of CalcTaskbar */
+}
+
+.contentSectionStyle {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    width: 100%;
+    padding: 0px;
+    background-color: white;
+    gap: 100px; /* Space between sections */
+}
+
+.sideStyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Aligns items centrally in the column */
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    color: cornflowerblue;
+    max-width: 40%; /* Controls the max width of each side */
+}
+
+.headerStyle {
+    font-weight: bold;
+    font-size: 150%;
+    text-align: center;
+    width: 100%;
+    align-self: center; /* Ensure the header is centered */
+}
+
+
+.narrowRectangle {
+    flex: 0.5; /* Adjusts the flex grow factor to make it narrower */
+    max-width: 33%; /* Adjusts the maximum width */
+    background-color: white;
+    padding: 20px;
+    color: cornflowerblue;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+}
+
+/* Add these styles to your calculator.css */
+
+.rectangleStyle label {
+    display: block;
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.rectangleStyle input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.rectangleStyle select {
+    width: 100%; /* Full width of the container */
+    padding: 8px; /* Padding for a better appearance */
+    margin-top: 5px; /* Spacing above the dropdown */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 4px; /* Rounded corners for aesthetics */
+}
+
+.contentWrapper {
+    position: relative;
+    width: 80%; /* Ensures the content wrapper takes the full width */
+    padding-top: 60px; /* Space for the header */
+}
+
+.rectangleStyle {
+    background-color: white; 
+    padding: 30px 30px 50px 30px; /* Reduced padding */
+    margin-top: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Roboto', sans-serif;
+}
+
+.rectangleStyle .calculateButton {
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px; /* Space above the button */
+}
+
+.rectangleStyleInfo {
+    background-color: white; /* Example background color */
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.informationStyleFirst {
+    font-family: 'Roboto', sans-serif;
+    font-size: 120%;
+}
+
+.informationStyleRest {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 13px;
+    font-size: 120%;
+}
+
+.informationStyleFollowing {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 13px;
+    padding-left: 20px;
+    font-size: 120%;
+}
+
+.text-left {
+    align-self: flex-start;
+    text-align: left;
+    width: 100%; /* Fixes the width issue */
+}
+
+.customLink {
+    font-weight: bold;
+    color: cornflowerblue; 
+    text-decoration: none; 
+}
+.customLink:hover {
+    text-decoration: underline; /* Underline on hover (optional) */
+}
+
+@media (max-width: 768px) {
+    .headerStyle {
+        font-size: 150%; /* Smaller font size on smaller screens */
+    }
+
+    .sideStyle, .narrowRectangle {
+        flex: 1; /* Ensure both sections take equal space on smaller screens */
+        max-width: 100%; /* Allow each section to expand fully on smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .contentSectionStyle {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+        gap: 20px; /* Adjust gap between stacked sections */
+    }
+
+    /* Add other responsive adjustments as needed */
+}
+
